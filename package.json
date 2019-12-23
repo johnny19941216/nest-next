@@ -9,9 +9,10 @@
     "prebuild": "npm run clean",
     "predev": "npm run clean",
     "build:app": "nest build",
-    "build:client": "next build",
+    "build:client": "next build client",
     "build": "npm run build:app && npm run build:client",
-    "dev": "nest start --watch"
+    "dev": "nest start --watch",
+    "start": "node dist/main.js"
   },
   "dependencies": {
     "@nestjs/common": "^6.7.2",

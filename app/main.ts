@@ -20,6 +20,6 @@ async function bootstrap() {
   const renderer = app.get(RenderModule);
   renderer.register(app, client, { viewsDir: null, dev });
 
-  await app.listen(3000);
+  await app.listen(3003);
 }
 bootstrap();
