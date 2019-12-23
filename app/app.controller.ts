@@ -12,4 +12,9 @@ export class AppController {
       name: 'johnny',
     };
   }
+
+  @Get('/api')
+  api() {
+    return 'api';
+  }
 }

@@ -8,6 +8,8 @@ import 'reflect-metadata';
 async function bootstrap() {
   const dev = process.env.NODE_ENV !== 'production';
 
+  console.log('------dev:--', dev);
+
   const client = Next({
     dir: path.join(__dirname, '../client'),
     dev,

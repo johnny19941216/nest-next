@@ -1,5 +1,8 @@
 import * as React from 'react';
 import { NextPage, NextPageContext } from 'next';
+import { Button } from 'antd';
+
+import styles from './index.scss';
 
 interface Props {
   query: { name?: string };
@@ -7,7 +10,11 @@ interface Props {
 
 const Index: NextPage<Props> = ({ query }) => {
   const greetName = query.name ? query.name : 'World';
-  return <div>hi, {greetName}!</div>;
+  return (
+    <div className={styles.test}>
+      hi, {greetName}!<Button type="primary"> ANTD</Button>
+    </div>
+  );
 };
 
 Index.getInitialProps = async (ctx: NextPageContext) => {
